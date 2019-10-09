@@ -6,9 +6,9 @@ import java.util.Random;
 public class WeatherData implements Subject {
 
     private List<Observer> observers = new ArrayList<>();
-    int current_temperature = 0;
-    int current_humidity = 0;
-    int current_pressure = 0;
+    private int current_temperature = 0;
+    private int current_humidity = 0;
+    private int current_pressure = 0;
 
     void activate() {
         Random rand = new Random();
@@ -21,11 +21,11 @@ public class WeatherData implements Subject {
     }
 
     public void registerObserver(Observer o) {
-        observers.add(o);
+        this.observers.add(o);
     }
 
     public void removeObserver(Observer o) {
-        observers.remove(o);
+        this.observers.remove(o);
     }
 
     public void notifyObservers() {
