@@ -1,5 +1,5 @@
 package cs2901.utec.edu.pe;
 
 public interface Observer {
-    void update();
+    void update(Subject s);
 }
