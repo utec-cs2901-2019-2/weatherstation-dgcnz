@@ -2,7 +2,7 @@ package cs2901.utec.edu.pe;
 
 import java.util.*;
 import java.lang.*;
-import java.util.*;
+import java.io.*;
 
 
 public class StatisticsDisplay implements Observer {

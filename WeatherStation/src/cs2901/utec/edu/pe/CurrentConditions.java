@@ -1,5 +1,7 @@
 package cs2901.utec.edu.pe;
 
+import java.util.*;
+
 public class CurrentConditions implements Observer {
     
     @Override
